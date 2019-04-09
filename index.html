@@ -11,10 +11,79 @@
 
   <body>
     <div class="container">
+      <div class="selectTix">
+
       <h1>Theater Shmeater: Now Showing!</h1>
       <ul id=nowPlaying>
-
       </ul>
+      <ul id="showtimes">
+            </ul>
+
+
+  <div class="form-group" id="matineeBuy">
+    <label for="ticketNum">Number of tickets:</label>
+    <select class="form-control" id="matineeSelect">
+    <option>0</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+
+  <button>Buy tickets</button>
+</div>
+
+<div class="form-group" id="eveningBuy">
+   <label for="ticketNum">Adult (18-65) tickets:</label>
+   <select class="form-control" id="adultSelect">
+  <option>0</option>
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+   <option>4</option>
+   <option>5</option>
+   </select>
+
+   <br>
+
+ <label for="ticketNum">Child (up to 18 years)</label>
+ <select class="form-control" id="childSelect">
+<option>0</option>
+ <option>1</option>
+ <option>2</option>
+ <option>3</option>
+ <option>4</option>
+ <option>5</option>
+</select>
+<br>
+
+<label for="ticketNum">Senior (65+)</label>
+<select class="form-control" id="seniorSelect">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+  <button>Buy tickets</button>
+
+</div><br>
+</div>
+<div id="confirm">
+
+<p>Please review your order to confirm:</p>
+<ul>
+  <li>Movie: <span id="finalTitle"> </span></li>
+  <li>Time: <span id="finalShowtime"></span></li>
+  <li>Total price: <span id="finalAmt"></span></li>
+
+  </ul>
+
+
+  </div>
+
     </div>
   </body>
 </html>
